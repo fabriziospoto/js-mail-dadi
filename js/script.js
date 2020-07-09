@@ -20,16 +20,17 @@
 // Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-alert('Tira il dado');
-var dadoUtente = Math.floor(Math.random()* 6) + 1;
-console.log(dadoUtente);
-alert('E\' uscito il numero ' + dadoUtente);
+alert('Tira il dado');  //Richiesta tiro dado
+var dadoUtente = Math.floor(Math.random()* 6) + 1;  //Estrazione numero casuale
+console.log(dadoUtente);  //Verifica in Console
+alert('E\' uscito il numero ' + dadoUtente);   //Mostrare numero ad utente
+
 alert('Ora tiro io');
 var dadoMio = Math.floor(Math.random()* 6) + 1;
 console.log(dadoMio);
 alert('E\' uscito il numero ' + dadoMio);
 
-if (dadoUtente > dadoMio) {
+if (dadoUtente > dadoMio) {       //If per stabilire numero più alto e risposta
     alert('Complimenti! Hai Vinto!');
 } else if (dadoUtente == dadoMio) {
     alert('Abbiamo pareggiato...poco male!');
